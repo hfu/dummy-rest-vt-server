@@ -11,7 +11,7 @@ $ openssl req -new -key private.key -out server.csr
 $ openssl x509 -req -days 365 -signkey private.key < server.csr > server.crt
 $ npm install
 $ node server
-$ open https://localhost:68000/arcgis/rest/services/Hosted/openmaptiles/VectorTileServer?f=json
+$ open https://localhost:65432/arcgis/rest/services/Hosted/openmaptiles/VectorTileServer?f=json
 ```
 
 ## CONTRIBUTE.md things
