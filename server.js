@@ -1,9 +1,12 @@
 const spdy = require('spdy')
 const express = require('express')
+const cors = require('cors')
 const fs = require('fs')
 
 const app = express()
 const style = fs.readFileSync('style.json')
+
+app.use(cors())
 
 app.get(
   '/arcgis/rest/services/Hosted/openmaptiles/VectorTileServer', 
